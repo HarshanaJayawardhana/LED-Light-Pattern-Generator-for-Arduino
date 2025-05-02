@@ -2,10 +2,10 @@
 int Maximum_Pins_In_Output = 8;
 int Pattern_Loop_Number = 3;
 int Output_pin[] = { 10, 11, 12, 13, 14, 15, 16, 17 };  //  Pin Number
-int Time = 250;                                      // millisecond 1000 = 1S 400
+int Time = 200;                                      // millisecond 1000 = 1S 400
 
 
-bool Output_Type = true;
+bool Output_Type = true; // 
 
 
 void setup() {
@@ -149,7 +149,7 @@ void loop() {
 
   // 23 Night Rider Duble Pattern Dark
   for (int Loop_01 = 0; Loop_01 < Pattern_Loop_Number * 5; Loop_01++) {
-    Night_Rider_Duble(Output_Type);
+    Night_Rider_Duble(!Output_Type);
   }
 
   // 24 Filled One By One Forward
