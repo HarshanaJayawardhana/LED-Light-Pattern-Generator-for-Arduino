@@ -20,7 +20,7 @@ This variable determines how many times **each LED pattern** should repeat befor
 
 ---
 
-### `int Output_pin[] = { 1, 0, 8, 9, 10, 11, 12, 13 };`
+### `int Output_pin[] = 10, 11, 12, 13, 14, 15, 16, 17;`
 This is an **array** that lists the **digital pins** on the Arduino where your LEDs are connected.
 - The order of pins in the array will be used to generate the patterns.
 - **Important Note:** Pins **0 and 1** are typically used for **serial communication** (USB and Serial Monitor). Using them for LEDs may cause conflicts with uploading code or using `Serial.print()`. Prefer avoiding these unless you're not using Serial features.
